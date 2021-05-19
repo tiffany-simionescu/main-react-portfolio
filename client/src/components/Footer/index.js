@@ -1,4 +1,5 @@
 import React from 'react'
+import { animateScroll as scroll } from 'react-scroll';
 import { FaLinkedin, FaGithub, FaFacebook, FaTwitter } from 'react-icons/fa';
 import {
   FooterContainer,
@@ -18,17 +19,24 @@ import {
 } from './FooterElements';
 
 const Footer = () => {
+
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  };
+
   return (
     <FooterContainer>
       <FooterWrap>
         <FooterLinksContainer>
           <FooterLinksWrapper>
             <FooterLinkItems>
-              <FooterLinkTitle>Web Developer</FooterLinkTitle>
+              <FooterLinkTitle>My Portfolio</FooterLinkTitle>
                 <FooterLink to='about'>About</FooterLink>
                 <FooterLink to='portfolio'>Portfolio</FooterLink>
                 <FooterLink to='resume'>Resume</FooterLink>
             </FooterLinkItems>
+          </FooterLinksWrapper>
+          <FooterLinksWrapper>
             <FooterLinkItems>
               <FooterLinkTitle>Social Media</FooterLinkTitle>
                 <FooterLinkA 
@@ -73,8 +81,8 @@ const Footer = () => {
 
         <SocialMedia>
           <SocialMediaWrap>
-            <SocialLogo to="/">
-              Portfolio
+            <SocialLogo to="/" onClick={toggleHome}>
+              Tiffany Simionescu's Portfolio
             </SocialLogo>
             <WebsiteRights>
               Tiffany Simionescu's Portfollio © {new Date().getFullYear()}{" "}

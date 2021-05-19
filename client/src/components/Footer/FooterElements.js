@@ -27,6 +27,7 @@ export const FooterLinksContainer = styled.div`
 
 export const FooterLinksWrapper = styled.div`
   display: flex;
+  margin-left: 42px;
 
   @media screen and (max-width: 820px) {
     flex-direction: column;
@@ -123,5 +124,10 @@ export const SocialIcons = styled.div`
 
 export const SocialIconLink = styled.a`
   color: #fff;
-  font-size: 24px;
+  font-size: 32px;
+
+  &:hover {
+    color: #33BBBF;
+    transition: 0.3s ease-out;
+  }
 `;
