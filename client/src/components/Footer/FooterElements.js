@@ -121,6 +121,11 @@ export const SocialLogo = styled(LinkR)`
   align-items: center;
   margin-bottom: 16px;
   font-weight: bold;
+
+  &:hover {
+    color: #33BBBF;
+    transition: 0.3s ease-out;
+  }
 `;
 
 export const WebsiteRights = styled.small`

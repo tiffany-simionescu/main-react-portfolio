@@ -40,6 +40,11 @@ export const NavLogo = styled(LinkR)`
   margin-left: 24px;
   font-weight: bold;
   text-decoration: none;
+
+  &:hover {
+    color: #33BBBF;
+    transition: 0.3s ease-out;
+  }
 `;
 
 export const MobileIcon = styled.div`
@@ -84,6 +89,11 @@ export const NavLinks = styled(LinkS)`
 
   &.active {
     border-bottom: 3px solid #33BBBF;
+  }
+
+  &:hover {
+    color: #33BBBF;
+    transition: 0.3s ease-out;
   }
 `;
 

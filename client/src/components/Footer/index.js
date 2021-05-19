@@ -26,8 +26,22 @@ const Footer = () => {
   };
 
   return (
-    <FooterContainer>
+    <FooterContainer id='footer'>
       <FooterWrap>
+        <SocialIcons>
+          <SocialIconLink href="/" target="_blank" aria-label="LinkedIn">
+            <FaLinkedin />
+          </SocialIconLink>
+          <SocialIconLink href="/" target="_blank" aria-label="GitHub">
+            <FaGithub />
+          </SocialIconLink>
+          <SocialIconLink href="/" target="_blank" aria-label="Facebook">
+            <FaFacebook />
+          </SocialIconLink>
+          <SocialIconLink href="/" target="_blank" aria-label="Twitter">
+            <FaTwitter />
+          </SocialIconLink>
+        </SocialIcons>
         <FooterLinksContainer>
           <FooterLinksWrapper>
             <FooterLinkItems>
@@ -90,7 +104,7 @@ const Footer = () => {
               Tiffany Simionescu's Portfollio © {new Date().getFullYear()}{" "}
               All rights reserved.
             </WebsiteRights>
-            <SocialIcons>
+            {/* <SocialIcons>
               <SocialIconLink href="/" target="_blank" aria-label="LinkedIn">
                 <FaLinkedin />
               </SocialIconLink>
@@ -103,7 +117,7 @@ const Footer = () => {
               <SocialIconLink href="/" target="_blank" aria-label="Twitter">
                 <FaTwitter />
               </SocialIconLink>
-            </SocialIcons>
+            </SocialIcons> */}
           </SocialMediaWrap>
         </SocialMedia>
       </FooterWrap>
