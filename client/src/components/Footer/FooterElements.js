@@ -69,6 +69,19 @@ export const FooterLink = styled(LinkS)`
   }
 `;
 
+export const FooterLinkR = styled(LinkR)`
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  font-size: 14px;
+  cursor: pointer;
+
+  &:hover {
+    color: #33BBBF;
+    transition: 0.3s ease-out;
+  }
+`;
+
 export const FooterLinkA = styled.a`
   color: #fff;
   text-decoration: none;

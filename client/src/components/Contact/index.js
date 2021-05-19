@@ -6,13 +6,14 @@ import {
   FormContent, 
   FormH1, 
   FormInput, 
+  FormInputMessage,
   FormLabel, 
   FormWrap, 
   Icon, 
   Text
-} from './SigninElements'
+} from './ContactElements'
 
-const SignIn = () => {
+const Contact = () => {
   return (
     <>
       <Container>
@@ -20,12 +21,14 @@ const SignIn = () => {
           <Icon to="/">Tiffany Simionescu's Portfolio</Icon>
           <FormContent>
             <Form action="#">
-              <FormH1>Admin Sign In</FormH1>
+              <FormH1>Contact</FormH1>
+              <FormLabel htmlFor="for">Name</FormLabel>
+              <FormInput type="text" required />
               <FormLabel htmlFor="for">Email</FormLabel>
               <FormInput type="email" required />
-              <FormLabel htmlFor="for">Password</FormLabel>
-              <FormInput type="password" required />
-              <FormButton type="submit">Sign In</FormButton>
+              <FormLabel htmlFor="for">Message</FormLabel>
+              <FormInputMessage type="textarea" rows="5" required />
+              <FormButton type="submit">Send</FormButton>
               <Text to="/">Cancel</Text>
             </Form>
           </FormContent>
@@ -35,4 +38,4 @@ const SignIn = () => {
   )
 }
 
-export default SignIn
+export default Contact

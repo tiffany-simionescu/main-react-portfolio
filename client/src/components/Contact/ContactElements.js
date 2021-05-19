@@ -32,7 +32,7 @@ export const FormWrap = styled.div`
 export const Icon = styled(Link)`
     // margin-left: 32px;
     text-align: center;
-    margin-top: 32px;
+    margin-top: 22px;
     text-decoration: none;
     color: #fff;
     font-weight: 700;
@@ -63,7 +63,7 @@ export const Form = styled.div`
     z-index: 1;
     display: grid;
     margin: 0 auto;
-    padding: 80px 32px;
+    padding: 30px 32px;
     border-radius: 4px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
 
@@ -91,6 +91,13 @@ export const FormInput = styled.input`
     margin-bottom: 32px;
     border: none;
     border-radius: 4px;
+`;
+
+export const FormInputMessage = styled.textarea`
+  padding: 16px 16px;
+  margin-bottom: 32px;
+  border: none;
+  border-radius: 4px;
 `;
 
 export const FormButton = styled.button`

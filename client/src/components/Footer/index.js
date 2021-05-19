@@ -10,6 +10,7 @@ import {
   FooterLinkTitle,
   FooterLink,
   FooterLinkA,
+  FooterLinkR,
   SocialMedia,
   SocialMediaWrap,
   SocialLogo,
@@ -34,6 +35,7 @@ const Footer = () => {
                 <FooterLink to='about'>About</FooterLink>
                 <FooterLink to='portfolio'>Portfolio</FooterLink>
                 <FooterLink to='resume'>Resume</FooterLink>
+                <FooterLinkR to="/contact">Contact</FooterLinkR>
             </FooterLinkItems>
           </FooterLinksWrapper>
           <FooterLinksWrapper>
