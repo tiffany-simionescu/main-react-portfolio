@@ -1,8 +1,8 @@
 export const homeObjOne = {
   id: 'about',
-  lightBg: false,
-  lightText: true,
-  lightTextDesc: true,
+  lightBg: true,
+  lightText: false,
+  lightTextDesc: false,
   topLine: 'About',
   headline: 'This is the About headline',
   description: 'A detail-oriented Full Stack Web Developer with a knack for delivering user-friendly solutions effectively and efficiently. Possesses a track record of developing frontend web applications, secure backend databases and fully-functional websites both self-created and with team members. Regular participant of local hackathons and web developer meetups. Consistantly learning and improving design and coding skills, while looking for innovative ways to enhance production. Enjoys helping clients to achieve their desired look and database functionality for their online business.',
@@ -10,9 +10,9 @@ export const homeObjOne = {
   imgStart: false,
   img: require('../../images/svg-1.svg').default,
   alt: 'about-image',
-  dark: true,
-  primary: true,
-  darkText: false,
+  dark: false,
+  primary: false,
+  darkText: true,
 }
 
 export const homeObjTwo = {
@@ -34,17 +34,17 @@ export const homeObjTwo = {
 
 export const homeObjThree = {
   id: 'resume',
-  lightBg: false,
-  lightText: true,
-  lightTextDesc: true,
+  lightBg: true,
+  lightText: false,
+  lightTextDesc: false,
   topLine: 'Resume',
   headline: 'This is the Resume headline',
-  description: 'A detail-oriented Full Stack Web Developer with a knack for delivering user-friendly solutions effectively and efficiently. Possesses a track record of developing frontend web applications, secure backend databases and fully-functional websites both self-created and with team members. Regular participant of local hackathons and web developer meetups. Consistantly learning and improving design and coding skills, while looking for innovative ways to enhance production. Enjoys helping clients to achieve their desired look and database functionality for their online business.',
+  description: 'For more information about my work experience, please view my LinkedIn profile.',
   buttonLabel: 'Get started',
-  imgStart: false,
+  imgStart: true,
   img: require('../../images/svg-1.svg').default,
   alt: 'resume-image',
-  dark: true,
-  primary: true,
-  darkText: false,
+  dark: false,
+  primary: false,
+  darkText: true,
 }
