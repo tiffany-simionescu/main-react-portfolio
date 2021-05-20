@@ -42,7 +42,7 @@ const Resume = () => {
             <Column2>
               <ImgWrap>
                 <Img 
-                  src={require('../images/svg-1.svg').default} 
+                  src={require('../../images/svg-1.svg').default} 
                   alt={"resume-image"} 
                 />
               </ImgWrap>

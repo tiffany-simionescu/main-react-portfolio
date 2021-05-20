@@ -6,7 +6,7 @@ import { homeObjOne } from '../components/InfoSection/Data';
 import Navbar from '../components/Navbar'
 import Portfolio from '../components/Portfolio';
 import Sidebar from '../components/Sidebar'
-import Resume from '../Resume';
+import Resume from '../components/Resume';
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);

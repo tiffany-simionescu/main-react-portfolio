@@ -29,17 +29,29 @@ const Footer = () => {
     <FooterContainer id='footer'>
       <FooterWrap>
         <SocialIcons>
-          <SocialIconLink href="/" target="_blank" aria-label="LinkedIn">
-            <FaLinkedin />
+          <SocialIconLink 
+            href="https://www.linkedin.com/in/tiffanysimionescu/" 
+            target="_blank" 
+            aria-label="LinkedIn"
+          ><FaLinkedin />
           </SocialIconLink>
-          <SocialIconLink href="/" target="_blank" aria-label="GitHub">
-            <FaGithub />
+          <SocialIconLink 
+            href="https://github.com/tiffany-simionescu" 
+            target="_blank" 
+            aria-label="GitHub"
+          ><FaGithub />
           </SocialIconLink>
-          <SocialIconLink href="/" target="_blank" aria-label="Facebook">
-            <FaFacebook />
+          <SocialIconLink 
+            href="https://www.facebook.com/Tiffany-Simionescu-Full-Stack-Web-Developer-337217927229001" 
+            target="_blank" 
+            aria-label="Facebook"
+          ><FaFacebook />
           </SocialIconLink>
-          <SocialIconLink href="/" target="_blank" aria-label="Twitter">
-            <FaTwitter />
+          <SocialIconLink 
+            href="https://twitter.com/tsimionescu87" 
+            target="_blank" 
+            aria-label="Twitter"
+          ><FaTwitter />
           </SocialIconLink>
         </SocialIcons>
         <FooterLinksContainer>
