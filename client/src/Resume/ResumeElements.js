@@ -1,15 +1,18 @@
 import styled from 'styled-components';
 
-export const InfoContainer = styled.div`
+export const ResumeContainer = styled.div`
   color: #fff;
   background: ${({lightBg}) => (lightBg ? '#f9f9f9' : '#060F13')};
-  padding: 100px 0;
+  
+  @media screen and (max-width: 768px) {
+    padding: 100px 0;
+  }
 `;
 
-export const InfoWrapper = styled.div`
+export const ResumeWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 100%;
+  height: 760px;
   width: 100%;
   max-width: 1100px;
   margin-right: auto;
@@ -18,7 +21,7 @@ export const InfoWrapper = styled.div`
   justify-content: center;
 `;
 
-export const InfoRow = styled.div`
+export const ResumeRow = styled.div`
   display: grid;
   grid-auto-columns: minmax(auto, 1fr);
   align-items: center;
@@ -91,4 +94,27 @@ export const Img = styled.img`
   width: 100%;
   margin: 0 0 10px 0;
   padding-right: 0;
+`;
+
+export const Button = styled.a`
+  border-radius: 50px;
+  background: ${({primary}) => (primary ? '#33BBBF' : '#060F13')};
+  white-space: nowrap;
+  padding: ${({big}) => (big ? '14px 48px' : '12px 30px')};
+  color: ${({dark}) => (dark ? '#060F13' : '#fff')};
+  font-size: ${({fontBig}) => (fontBig ? '20px' : '16px')};
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background: ${({primary}) => (primary ? '#fff' : '#33BBBF')};
+    color: #060F13;
+  }
 `;
