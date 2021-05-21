@@ -48,7 +48,7 @@ export const PortfolioWrapper = styled.div`
 `;
 
 export const PortfolioCard = styled.div`
-  background: #fff;
+  background: lightgrey;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -58,11 +58,14 @@ export const PortfolioCard = styled.div`
   padding: 30px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   transition: all 0.2s ease-in-out;
+  // opacity: 0.8;
 
   &:hover {
+    background: #fff;
     transform: scale(1.02);
     transition: all 0.2s ease-in-out;
     cursor: pointer;
+    opacity: 1;
   }
 `;
 
@@ -91,8 +94,6 @@ export const PortfolioP2 = styled.p`
 `;
 
 export const StyleModal = Modal.styled`
-  // min-height: 400px;
-  // min-width: 500px;
   background: #fff;
   display: flex;
   flex-direction: column;
@@ -103,11 +104,15 @@ export const StyleModal = Modal.styled`
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   transition: all 0.2s ease-in-out;
   margin: auto 30px;
+  margin-top: 95px;
+  width: 80%;
+  height: 80%;
 `;
 
 export const StyleModalTitle = styled.h1`
   font-size: 1.5rem;
   margin-bottom: 20px;
+  margin-top: 10px;
 
   @media screen and (max-width: 480px) {
     font-size: 2rem;
@@ -117,6 +122,7 @@ export const StyleModalTitle = styled.h1`
 export const StyleModalP = styled.p`
   font-size: 1rem;
   text-align: center;
+  width: 80%;
 `;
 
 export const StyleModalButton = styled.button`
@@ -142,6 +148,49 @@ export const StyleModalButton = styled.button`
   }
 `;
 
+export const StyleModalLink = styled.a`
+  border-radius: 50px;
+  background: ${({primary}) => (primary ? '#33BBBF' : '#060F13')};
+  white-space: nowrap;
+  padding: ${({big}) => (big ? '14px 48px' : '12px 30px')};
+  color: ${({dark}) => (dark ? '#060F13' : '#fff')};
+  font-size: ${({fontBig}) => (fontBig ? '20px' : '16px')};
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  margin-top: 20px;
+  text-decoration: none;
+  margin-right: 10px;
+  margin-left: 10px;
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background: ${({primary}) => (primary ? '#fff' : '#33BBBF')};
+    color: #060F13;
+  }
+`;
+
+export const StyleModalLinkContainer = styled.div`
+  display: flex;
+`;
+
 export const Img = styled.img`
   width: 30%;
+`;
+
+export const Close = styled.img`
+  width: 15px;
+  margin-left: 70%;
+  cursor: pointer;
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    filter: invert(58%) sepia(98%) 
+      saturate(299%) hue-rotate(133deg) 
+      brightness(90%) contrast(93%);
+  }
 `;
