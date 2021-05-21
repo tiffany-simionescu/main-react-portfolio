@@ -74,12 +74,12 @@ const Portfolio = (id) => {
             >
               View Code
             </StyleModalLink>
-            <StyleModalLink 
+            {/* <StyleModalLink 
               target="_blank"
               href="https://github.com/tiffany-simionescu/ecommerce"
             >
               View Website
-            </StyleModalLink>
+            </StyleModalLink> */}
           </StyleModalLinkContainer>
         </StyleModal>
 
@@ -101,7 +101,7 @@ const Portfolio = (id) => {
           <StyleModalP>
             This app is currently in development. Stay tuned!
           </StyleModalP>
-          <StyleModalLinkContainer>
+          {/* <StyleModalLinkContainer>
             <StyleModalLink 
               target="_blank"
               href="https://github.com/tiffany-simionescu"
@@ -114,7 +114,7 @@ const Portfolio = (id) => {
             >
               View Website
             </StyleModalLink>
-          </StyleModalLinkContainer>
+          </StyleModalLinkContainer> */}
         </StyleModal>
 
         <PortfolioCard id="airbnb-clone" onClick={toggleAirbnb}>
@@ -135,7 +135,7 @@ const Portfolio = (id) => {
           <StyleModalP>
             This app is currently in development. Stay tuned!
           </StyleModalP>
-          <StyleModalLinkContainer>
+          {/* <StyleModalLinkContainer>
             <StyleModalLink 
               target="_blank"
               href="https://github.com/tiffany-simionescu"
@@ -148,7 +148,7 @@ const Portfolio = (id) => {
             >
               View Website
             </StyleModalLink>
-          </StyleModalLinkContainer>
+          </StyleModalLinkContainer> */}
         </StyleModal>
       </PortfolioWrapper>
     </PortfolioContainer>

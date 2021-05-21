@@ -58,9 +58,27 @@ const Footer = () => {
           <FooterLinksWrapper>
             <FooterLinkItems>
               <FooterLinkTitle>My Portfolio</FooterLinkTitle>
-                <FooterLink to='about'>About</FooterLink>
-                <FooterLink to='portfolio'>Portfolio</FooterLink>
-                <FooterLink to='resume'>Resume</FooterLink>
+                <FooterLink to='about'
+                  smooth={true} 
+                  duration={500} 
+                  spy={true} 
+                  exact='true' 
+                  offset={-80}>About</FooterLink>
+
+                <FooterLink to='portfolio'
+                  smooth={true} 
+                  duration={500} 
+                  spy={true} 
+                  exact='true' 
+                  offset={-80}>Portfolio</FooterLink>
+
+                <FooterLink to='resume'
+                  smooth={true} 
+                  duration={500} 
+                  spy={true} 
+                  exact='true' 
+                  offset={-80}>Resume</FooterLink>
+                  
                 <FooterLinkR to="/contact">Contact</FooterLinkR>
             </FooterLinkItems>
           </FooterLinksWrapper>
