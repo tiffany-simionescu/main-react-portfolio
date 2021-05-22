@@ -1,3 +1,26 @@
+# React Portfolio
+
+The purpose of this application is to display my full stack web developer portfolio. This application was built with React.js, email.js for receiving client emails, styled components for styling, react-scroll for smooth scrolling, style-react-modal for the portfolio cards, and react-icons for the social media icons.
+
+## Install
+```
+cd client
+npm install
+```
+
+## Run App
+```
+cd client
+npm start
+```
+
+### Environmental Variables
+- Create a dotenv file containing the following environmental variables:
+  - REACT_APP_TEMPLATE_ID
+  - REACT_APP_USER_ID
+
+- These envirnomental variables are used in the `./client/src/components/Contact/index.js` file and are intended for [email.js](https://www.emailjs.com/). First, create an account and sync a gmail account with them. Then look for the template ID, which can be found in `Email Templates > Create New Template > Copy Template ID`. The user ID can be found in `Integration > API Keys > User ID`
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
