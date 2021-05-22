@@ -175,6 +175,7 @@ export const StyleModalLink = styled.a`
 
 export const StyleModalLinkContainer = styled.div`
   display: flex;
+  margin-top: 20px;
 `;
 
 export const Img = styled.img`
@@ -191,5 +192,25 @@ export const Close = styled.img`
     filter: invert(58%) sepia(98%) 
       saturate(299%) hue-rotate(133deg) 
       brightness(90%) contrast(93%);
+  }
+`;
+
+export const ButtonTwo = styled.a`
+  color: #fff;
+  background-image: linear-gradient(30deg, #060F13 50%, #33BBBF 50%);
+  background-size: 500px;
+  background-repeat: no-repeat;
+  background-position: 0%;
+  transition: background 400ms ease-in-out;
+  border-radius: 50px;
+  white-space: nowrap;
+  padding: 14px 30px;
+  cursor:pointer;
+  text-decoration: none;
+
+  &:hover {
+    background-position: 100%;
+    color: #fff;
+    transition: 400ms ease-in-out;
   }
 `;

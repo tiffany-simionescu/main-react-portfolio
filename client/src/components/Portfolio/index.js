@@ -20,6 +20,7 @@ StyleModalButton,
 StyleModalLink,
 StyleModalLinkContainer,
 Close,
+ButtonTwo
 } from './PortfolioElements';
 
 const Portfolio = (id) => {
@@ -62,27 +63,26 @@ const Portfolio = (id) => {
           <StyleModalTitle>E-Commerce App</StyleModalTitle>
           <StyleModalP>
             This Ecommerce application was built using the MERN stack 
-            (MongoDB, Express.js, React, Node.js). In the front end 
-            (client directory), ant-design and bootstrap are used for 
-            the design elements, Redux for state management, and firebase 
-            for authentication and security (functionality to login with 
-            a Google account). When searching for available products, 
-            users have the ability to apply mutiple search filters to 
-            narrow down product selections.
+            (MongoDB, Express.js, React, Node.js). In the frontend, 
+            ant-design and bootstrap are used for the design elements, 
+            Redux for state management, and firebase for authentication 
+            and security (functionality to login with a Google account). 
+            When searching for available products, users have the ability 
+            to apply mutiple search filters to narrow down product selections.
           </StyleModalP>
           <StyleModalLinkContainer>
-            <StyleModalLink 
+            <ButtonTwo 
               target="_blank"
               href="https://github.com/tiffany-simionescu/ecommerce"
             >
               View Code
-            </StyleModalLink>
-            {/* <StyleModalLink 
+            </ButtonTwo>
+            {/* <ButtonTwo 
               target="_blank"
               href="https://github.com/tiffany-simionescu/ecommerce"
             >
               View Website
-            </StyleModalLink> */}
+            </ButtonTwo> */}
           </StyleModalLinkContainer>
         </StyleModal>
 
@@ -105,18 +105,18 @@ const Portfolio = (id) => {
             This app is currently in development. Stay tuned!
           </StyleModalP>
           {/* <StyleModalLinkContainer>
-            <StyleModalLink 
+            <ButtonTwo 
               target="_blank"
               href="https://github.com/tiffany-simionescu"
             >
               View Code
-            </StyleModalLink>
-            <StyleModalLink 
+            </ButtonTwo>
+            <ButtonTwo 
               target="_blank"
               href="https://github.com/tiffany-simionescu"
             >
               View Website
-            </StyleModalLink>
+            </ButtonTwo>
           </StyleModalLinkContainer> */}
         </StyleModal>
 
@@ -139,18 +139,18 @@ const Portfolio = (id) => {
             This app is currently in development. Stay tuned!
           </StyleModalP>
           {/* <StyleModalLinkContainer>
-            <StyleModalLink 
+            <ButtonTwo 
               target="_blank"
               href="https://github.com/tiffany-simionescu"
             >
               View Code
-            </StyleModalLink>
-            <StyleModalLink 
+            </ButtonTwo>
+            <ButtonTwo 
               target="_blank"
               href="https://github.com/tiffany-simionescu"
             >
               View Website
-            </StyleModalLink>
+            </ButtonTwo>
           </StyleModalLinkContainer> */}
         </StyleModal>
       </PortfolioWrapper>
