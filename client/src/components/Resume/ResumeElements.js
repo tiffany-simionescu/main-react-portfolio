@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const ResumeContainer = styled.div`
   color: #fff;
@@ -116,5 +117,25 @@ export const Button = styled.a`
     transition: all 0.2s ease-in-out;
     background: ${({primary}) => (primary ? '#fff' : '#33BBBF')};
     color: #060F13;
+  }
+`;
+
+export const ButtonTwo = styled(Link)`
+  color: #fff;
+  background-image: linear-gradient(30deg, #060F13 50%, #33BBBF 50%);
+  background-size: 500px;
+  background-repeat: no-repeat;
+  background-position: 0%;
+  transition: background 400ms ease-in-out;
+  border-radius: 50px;
+  white-space: nowrap;
+  padding: 14px 30px;
+  cursor:pointer;
+  text-decoration: none;
+
+  &:hover {
+    background-position: 100%;
+    color: #fff;
+    transition: 400ms ease-in-out;
   }
 `;

@@ -3,7 +3,6 @@ import { Link as LinkR } from 'react-router-dom';
 import { Link as LinkS } from 'react-scroll';
 
 export const Nav = styled.nav`
-  // background: #060F13;
   background: ${({scrollNav}) => (scrollNav ? '#060F13' : 'transparent')};
   height: 80px;
   margin-top: -80px;
@@ -123,5 +122,26 @@ export const NavBtnLink = styled(LinkR)`
     transition: all 0.2s ease-in-out;
     background: #fff;
     color: #33BBBF;
+  }
+`;
+
+export const ButtonTwo = styled(LinkR)`
+  color: #060F13;
+  border: 3px solid #33BBBF;
+  background-image: linear-gradient(30deg, #33BBBF 50%, transparent 50%);
+  background-size: 500px;
+  background-repeat: no-repeat;
+  background-position: 0%;
+  transition: background 400ms ease-in-out;
+  border-radius: 50px;
+  white-space: nowrap;
+  padding: 12px 30px;
+  cursor:pointer;
+  text-decoration: none;
+
+  &:hover {
+    background-position: 100%;
+    color: #33BBBF;
+    transition: 400ms ease-in-out;
   }
 `;

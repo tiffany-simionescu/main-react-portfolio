@@ -13,6 +13,7 @@ import {
   ImgWrap,
   Img,
   Button,
+  ButtonTwo,
 } from './ResumeElements';
 import Pdf from './tiffany_simionescu_resume.pdf';
 
@@ -33,9 +34,9 @@ const Resume = () => {
                   work experience, please download my resume.
                 </Subtitle>
                 <BtnWrap>
-                  <Button href = {Pdf} target = "_blank">
+                  <ButtonTwo to={Pdf} target="_blank">
                     View Resume
-                  </Button>
+                  </ButtonTwo>
                 </BtnWrap>
               </TextWrapper>
             </Column1>
@@ -54,4 +55,4 @@ const Resume = () => {
   )
 }
 
-export default Resume
+export default Resume;

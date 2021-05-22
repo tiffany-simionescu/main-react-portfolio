@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import Video from '../../videos/video.mp4';
-import { Button } from '../ButtonElement';
 import {
   HeroContainer,
   HeroBg,
@@ -11,6 +10,7 @@ import {
   HeroBtnWrapper,
   ArrowForward,
   ArrowRight,
+  ButtonTwo
 } from './HeroElements';
 
 const HeroSection = () => {
@@ -33,7 +33,7 @@ const HeroSection = () => {
           working with JavaScript frameworks.
         </HeroP>
         <HeroBtnWrapper>
-          <Button 
+          <ButtonTwo 
             to="about"
             spy={true}
             smooth={true}
@@ -44,7 +44,7 @@ const HeroSection = () => {
             dark="true"
           >
             Get Started {hover ? <ArrowForward /> : <ArrowRight />}
-          </Button>
+          </ButtonTwo>
         </HeroBtnWrapper>
       </HeroContent>
     </HeroContainer>

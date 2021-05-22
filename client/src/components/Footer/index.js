@@ -104,25 +104,6 @@ const Footer = () => {
                   >Twitter</FooterLinkA>
             </FooterLinkItems>
           </FooterLinksWrapper>
-
-          {/* <FooterLinksWrapper>
-            <FooterLinkItems>
-              <FooterLinkTitle>About Us</FooterLinkTitle>
-                <FooterLink to='/signin'>How it works</FooterLink>
-                <FooterLink to='/signin'>Testimonials</FooterLink>
-                <FooterLink to='/signin'>Careers</FooterLink>
-                <FooterLink to='/signin'>Investors</FooterLink>
-                <FooterLink to='/signin'>Terms of Service</FooterLink>
-            </FooterLinkItems>
-            <FooterLinkItems>
-              <FooterLinkTitle>About Us</FooterLinkTitle>
-                <FooterLink to='/signin'>How it works</FooterLink>
-                <FooterLink to='/signin'>Testimonials</FooterLink>
-                <FooterLink to='/signin'>Careers</FooterLink>
-                <FooterLink to='/signin'>Investors</FooterLink>
-                <FooterLink to='/signin'>Terms of Service</FooterLink>
-            </FooterLinkItems>
-          </FooterLinksWrapper> */}
         </FooterLinksContainer>
 
         <SocialMedia>
@@ -134,20 +115,6 @@ const Footer = () => {
               Tiffany Simionescu's Portfollio © {new Date().getFullYear()}{" "}
               All rights reserved.
             </WebsiteRights>
-            {/* <SocialIcons>
-              <SocialIconLink href="/" target="_blank" aria-label="LinkedIn">
-                <FaLinkedin />
-              </SocialIconLink>
-              <SocialIconLink href="/" target="_blank" aria-label="GitHub">
-                <FaGithub />
-              </SocialIconLink>
-              <SocialIconLink href="/" target="_blank" aria-label="Facebook">
-                <FaFacebook />
-              </SocialIconLink>
-              <SocialIconLink href="/" target="_blank" aria-label="Twitter">
-                <FaTwitter />
-              </SocialIconLink>
-            </SocialIcons> */}
           </SocialMediaWrap>
         </SocialMedia>
       </FooterWrap>
@@ -155,4 +122,4 @@ const Footer = () => {
   )
 }
 
-export default Footer
+export default Footer;

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-scroll';
 
 export const InfoContainer = styled.div`
   color: #fff;
@@ -91,4 +92,23 @@ export const Img = styled.img`
   width: 100%;
   margin: 0 0 10px 0;
   padding-right: 0;
+`;
+
+export const ButtonTwo = styled(Link)`
+  color: #fff;
+  background-image: linear-gradient(30deg, #060F13 50%, #33BBBF 50%);
+  background-size: 500px;
+  background-repeat: no-repeat;
+  background-position: 0%;
+  transition: background 400ms ease-in-out;
+  border-radius: 50px;
+  white-space: nowrap;
+  padding: 14px 30px;
+  cursor:pointer;
+
+  &:hover {
+    background-position: 100%;
+    color: #fff;
+    transition: 400ms ease-in-out;
+  }
 `;

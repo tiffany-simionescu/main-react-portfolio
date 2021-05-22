@@ -11,7 +11,7 @@ import {
   NavItem,
   NavLinks,
   NavBtn,
-  NavBtnLink,
+  ButtonTwo,
 } from './NavbarElements';
 
 const Navbar = ({ toggle }) => {
@@ -72,7 +72,7 @@ const Navbar = ({ toggle }) => {
             </NavItem>
           </NavMenu>
           <NavBtn>
-            <NavBtnLink to="/contact">Contact</NavBtnLink>
+            <ButtonTwo to="/contact">Contact</ButtonTwo>
           </NavBtn>
         </NavbarContainer>
       </Nav>

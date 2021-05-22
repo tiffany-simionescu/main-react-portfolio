@@ -27,9 +27,9 @@ const Contact = () => {
 
     emailjs.sendForm(
       'gmail', 
-      'template_dWaijdid', 
+      process.env.REACT_APP_TEMPLATE_ID, 
       e.target, 
-      'user_IlZyzJhy7n0poMp73csQD'
+      process.env.REACT_APP_USER_ID
     )
     .then(res => {
       console.log("Email was sent.")

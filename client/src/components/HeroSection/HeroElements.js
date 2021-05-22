@@ -3,6 +3,7 @@ import {
   MdKeyboardArrowRight, 
   MdArrowForward 
 } from 'react-icons/md';
+import { Link } from 'react-scroll';
 
 export const HeroContainer = styled.div`
   background: #0c0c0c;
@@ -109,4 +110,24 @@ export const ArrowForward = styled(MdArrowForward)`
 export const ArrowRight = styled(MdKeyboardArrowRight)`
   margin-left: 8px;
   font-size: 20px;
+`;
+
+export const ButtonTwo = styled(Link)`
+  color: #060F13;
+  border: 3px solid #33BBBF;
+  background-image: linear-gradient(30deg, #33BBBF 50%, transparent 50%);
+  background-size: 500px;
+  background-repeat: no-repeat;
+  background-position: 0%;
+  transition: background 400ms ease-in-out;
+  border-radius: 50px;
+  white-space: nowrap;
+  padding: 12px 30px;
+  cursor:pointer;
+
+  &:hover {
+    background-position: 100%;
+    color: #33BBBF;
+    transition: 400ms ease-in-out;
+  }
 `;
