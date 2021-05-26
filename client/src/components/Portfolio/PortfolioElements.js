@@ -180,6 +180,7 @@ export const StyleModalLinkContainer = styled.div`
 
 export const Img = styled.img`
   width: 30%;
+  border-radius: 10px;
 `;
 
 export const Close = styled.img`

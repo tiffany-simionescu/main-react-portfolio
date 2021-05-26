@@ -59,7 +59,8 @@ const Portfolio = (id) => {
           onEscapeKeydown={toggleEcommerce}
         >
           <Close src={CloseIcon} alt="close" onClick={toggleEcommerce} />
-          <Img src={Icon1} alt="ecommerce-app" />
+          {/* <Img src={Icon1} alt="ecommerce-app" /> */}
+          <Img src="https://res.cloudinary.com/dzw1fju6k/image/upload/c_scale,w_832/v1621914480/hero-img_ptwrc4.jpg" alt="ecommerce-app" />
           <StyleModalTitle>E-Commerce App</StyleModalTitle>
           <StyleModalP>
             This Ecommerce application was built using the MERN stack 
