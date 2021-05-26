@@ -207,6 +207,8 @@ export const ButtonTwo = styled.a`
   padding: 14px 30px;
   cursor:pointer;
   text-decoration: none;
+  margin-right: 10px;
+  margin-left: 20px;
 
   &:hover {
     background-position: 100%;
