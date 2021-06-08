@@ -109,7 +109,7 @@ const Portfolio = (id) => {
             Styled-Components, Fuse.js for searching through movies and series, 
             custom hooks, Firebase for authentication and security, and Cloud Firestore for 
             the database. 
-          </StyleModalP>
+          </StyleModalP> 
           <StyleModalLinkContainer>
             <ButtonTwo 
               target="_blank"
