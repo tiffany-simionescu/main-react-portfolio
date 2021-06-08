@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Icon1 from '../../images/svg-3.svg'
 import Icon2 from '../../images/svg-4.svg'
 import Icon3 from '../../images/svg-5.svg'
+import Joker from '../../images/joker.jpg';
 import CloseIcon from '../../images/close.png';
 import {
 PortfolioContainer,
@@ -100,25 +101,29 @@ const Portfolio = (id) => {
           onEscapeKeydown={toggleNetflix}
         >
           <Close src={CloseIcon} alt="close" onClick={toggleNetflix} />
-          <Img src={Icon2} alt="netflix-clone" />
+          {/* <Img src={Icon2} alt="netflix-clone" /> */}
+          <Img src={Joker} alt="netflix-clone" />
           <StyleModalTitle>Netflix Clone</StyleModalTitle>
           <StyleModalP>
-            This app is currently in development. Stay tuned!
+            This Netflix Clone application was built using React, 
+            Styled-Components, Fuse.js for searching through movies and series, 
+            custom hooks, Firebase for authentication and security, and Cloud Firestore for 
+            the database. 
           </StyleModalP>
-          {/* <StyleModalLinkContainer>
+          <StyleModalLinkContainer>
             <ButtonTwo 
               target="_blank"
-              href="https://github.com/tiffany-simionescu"
+              href="https://github.com/tiffany-simionescu/netflix-clone"
             >
               View Code
             </ButtonTwo>
             <ButtonTwo 
               target="_blank"
-              href="https://github.com/tiffany-simionescu"
+              href="https://ts-netflix-clone-app.herokuapp.com/"
             >
               View Website
             </ButtonTwo>
-          </StyleModalLinkContainer> */}
+          </StyleModalLinkContainer>
         </StyleModal>
 
         <PortfolioCard id="airbnb-clone" onClick={toggleAirbnb}>
