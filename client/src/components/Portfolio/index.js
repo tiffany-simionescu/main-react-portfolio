@@ -74,7 +74,7 @@ const Portfolio = (id) => {
           </StyleModalP>
           <StyleModalLinkContainer>
             <ButtonTwo 
-              target="_blank"
+              target="_blank" 
               href="https://github.com/tiffany-simionescu/ecommerce-app"
             >
               View Code
