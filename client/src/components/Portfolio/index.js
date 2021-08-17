@@ -27,7 +27,7 @@ ButtonTwo
 const Portfolio = (id) => {
   const [ecommerceIsOpen, setEcommerceIsOpen] = useState(false);
   const [netflixIsOpen, setNetflixIsOpen] = useState(false);
-  const [airbnbIsOpen, setAirbnbIsOpen] = useState(false);
+  const [alphaBlogIsOpen, setAlphaBlogIsOpen] = useState(false);
 
   const toggleEcommerce = () => {
     setEcommerceIsOpen(!ecommerceIsOpen);
@@ -37,8 +37,8 @@ const Portfolio = (id) => {
     setNetflixIsOpen(!netflixIsOpen);
   };
 
-  const toggleAirbnb = () => {
-    setAirbnbIsOpen(!airbnbIsOpen);
+  const toggleAlphaBlog = () => {
+    setAlphaBlogIsOpen(!alphaBlogIsOpen);
   };
 
   return (
@@ -74,7 +74,7 @@ const Portfolio = (id) => {
           </StyleModalP>
           <StyleModalLinkContainer>
             <ButtonTwo 
-              target="_blank" 
+              target="_blank"
               href="https://github.com/tiffany-simionescu/ecommerce-app"
             >
               View Code
@@ -126,38 +126,38 @@ const Portfolio = (id) => {
           </StyleModalLinkContainer>
         </StyleModal>
 
-        <PortfolioCard id="airbnb-clone" onClick={toggleAirbnb}>
+        <PortfolioCard id="alpha-blog-clone" onClick={toggleAlphaBlog}>
           <PortfolioIcon src={Icon3} />
-          <PortfolioH2>Airbnb Clone</PortfolioH2>
+          <PortfolioH2>Alpha Blog</PortfolioH2>
           {/* <PortfolioP>
             This app is currently in development. Stay tuned!
           </PortfolioP> */}
         </PortfolioCard>
         <StyleModal
-          isOpen={airbnbIsOpen}
-          onBackgroundClick={toggleAirbnb}
-          onEscapeKeydown={toggleAirbnb}
+          isOpen={alphaBlogIsOpen}
+          onBackgroundClick={toggleAlphaBlog}
+          onEscapeKeydown={toggleAlphaBlog}
         >
-          <Close src={CloseIcon} alt="close" onClick={toggleAirbnb} />
-          <Img src={Icon3} alt="airbnb-clone" />
-          <StyleModalTitle>Airbnb Clone</StyleModalTitle>
+          <Close src={CloseIcon} alt="close" onClick={toggleAlphaBlog} />
+          <Img src={Icon3} alt="alpha-blog-clone" />
+          <StyleModalTitle>Alpha Blog</StyleModalTitle>
           <StyleModalP>
             This app is currently in development. Stay tuned!
           </StyleModalP>
-          {/* <StyleModalLinkContainer>
+          <StyleModalLinkContainer>
             <ButtonTwo 
               target="_blank"
-              href="https://github.com/tiffany-simionescu"
+              href="https://github.com/tiffany-simionescu/alpha-blog"
             >
               View Code
             </ButtonTwo>
-            <ButtonTwo 
+            {/* <ButtonTwo 
               target="_blank"
               href="https://github.com/tiffany-simionescu"
             >
               View Website
-            </ButtonTwo>
-          </StyleModalLinkContainer> */}
+            </ButtonTwo> */}
+          </StyleModalLinkContainer>
         </StyleModal>
       </PortfolioWrapper>
     </PortfolioContainer>
