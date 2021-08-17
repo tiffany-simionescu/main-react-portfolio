@@ -142,7 +142,10 @@ const Portfolio = (id) => {
           <Img src={Icon3} alt="alpha-blog-clone" />
           <StyleModalTitle>Alpha Blog</StyleModalTitle>
           <StyleModalP>
-            This app is currently in development. Stay tuned!
+            The Alpha Blog was built using Ruby on Rails, Bootstrap for styling,
+            bcrypt for user authentication, has one-to-many and many-to-many 
+            database associations, as well as model, controller and integration 
+            testing.
           </StyleModalP>
           <StyleModalLinkContainer>
             <ButtonTwo 
