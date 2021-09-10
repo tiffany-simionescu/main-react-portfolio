@@ -2,7 +2,10 @@ import React, { useState } from 'react';
 import Icon1 from '../../images/svg-3.svg'
 import Icon2 from '../../images/svg-4.svg'
 import Icon3 from '../../images/svg-5.svg'
+import Icon4 from '../../images/svg-6.svg'
 import Joker from '../../images/joker.jpg';
+import Blog from '../../images/blog.jpg';
+import Stock from '../../images/stocks.jpeg';
 import CloseIcon from '../../images/close.png';
 import {
 PortfolioContainer,
@@ -28,6 +31,7 @@ const Portfolio = (id) => {
   const [ecommerceIsOpen, setEcommerceIsOpen] = useState(false);
   const [netflixIsOpen, setNetflixIsOpen] = useState(false);
   const [alphaBlogIsOpen, setAlphaBlogIsOpen] = useState(false);
+  const [financeTrackerIsOpen, setFinanceTrackerIsOpen] = useState(false);
 
   const toggleEcommerce = () => {
     setEcommerceIsOpen(!ecommerceIsOpen);
@@ -39,6 +43,10 @@ const Portfolio = (id) => {
 
   const toggleAlphaBlog = () => {
     setAlphaBlogIsOpen(!alphaBlogIsOpen);
+  };
+
+  const toggleFinanceTracker = () => {
+    setFinanceTrackerIsOpen(!financeTrackerIsOpen);
   };
 
   return (
@@ -139,7 +147,7 @@ const Portfolio = (id) => {
           onEscapeKeydown={toggleAlphaBlog}
         >
           <Close src={CloseIcon} alt="close" onClick={toggleAlphaBlog} />
-          <Img src={Icon3} alt="alpha-blog-clone" />
+          <Img src={Blog} alt="alpha-blog-clone" />
           <StyleModalTitle>Alpha Blog</StyleModalTitle>
           <StyleModalP>
             The Alpha Blog was built using Ruby on Rails, Bootstrap for styling,
@@ -151,6 +159,42 @@ const Portfolio = (id) => {
             <ButtonTwo 
               target="_blank"
               href="https://github.com/tiffany-simionescu/alpha-blog"
+            >
+              View Code
+            </ButtonTwo>
+            {/* <ButtonTwo 
+              target="_blank"
+              href="https://github.com/tiffany-simionescu"
+            >
+              View Website
+            </ButtonTwo> */}
+          </StyleModalLinkContainer>
+        </StyleModal>
+
+        <PortfolioCard id="alpha-blog-clone" onClick={toggleFinanceTracker}>
+          <PortfolioIcon src={Icon4} />
+          <PortfolioH2>Finance Tracker</PortfolioH2>
+          {/* <PortfolioP>
+            This app is currently in development. Stay tuned!
+          </PortfolioP> */}
+        </PortfolioCard>
+        <StyleModal
+          isOpen={financeTrackerIsOpen}
+          onBackgroundClick={toggleFinanceTracker}
+          onEscapeKeydown={toggleFinanceTracker}
+        >
+          <Close src={CloseIcon} alt="close" onClick={toggleFinanceTracker} />
+          <Img src={Stock} alt="alpha-blog-clone" />
+          <StyleModalTitle>Finance Tracker</StyleModalTitle>
+          <StyleModalP>
+            The Finance Tracker is a social media stock tracker that was built using 
+            Ruby on Rails, Bootstrap for styling, device for user authentication, and 
+            has many-to-many database associations. 
+          </StyleModalP>
+          <StyleModalLinkContainer>
+            <ButtonTwo 
+              target="_blank"
+              href="https://github.com/tiffany-simionescu/finance-tracker"
             >
               View Code
             </ButtonTwo>
