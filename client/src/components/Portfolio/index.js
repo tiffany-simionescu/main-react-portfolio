@@ -89,7 +89,7 @@ const Portfolio = (id) => {
             </ButtonTwo>
             <ButtonTwo 
               target="_blank"
-              href="https://ts-ecommerce-app.herokuapp.com"
+              href="https://ecommerce.tiffanysimionescu.com/"
             >
               View Website
             </ButtonTwo>
