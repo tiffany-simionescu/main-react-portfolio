@@ -127,7 +127,7 @@ const Portfolio = (id) => {
             </ButtonTwo>
             <ButtonTwo 
               target="_blank"
-              href="https://ts-netflix-clone-app.herokuapp.com/"
+              href="https://netflixclone.tiffanysimionescu.com"
             >
               View Website
             </ButtonTwo>
