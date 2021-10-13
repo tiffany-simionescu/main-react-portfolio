@@ -198,12 +198,12 @@ const Portfolio = (id) => {
             >
               View Code
             </ButtonTwo>
-            {/* <ButtonTwo 
+            <ButtonTwo 
               target="_blank"
-              href="https://github.com/tiffany-simionescu"
+              href="https://financetracker.tiffanysimionescu.com"
             >
               View Website
-            </ButtonTwo> */}
+            </ButtonTwo>
           </StyleModalLinkContainer>
         </StyleModal>
       </PortfolioWrapper>
