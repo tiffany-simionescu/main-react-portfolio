@@ -5,7 +5,7 @@ export const homeObjOne = {
   lightTextDesc: false,
   topLine: 'About',
   headline: 'Full Stack Web Developer',
-  description: 'A detail-oriented Full Stack Web Developer with a knack for delivering user-friendly solutions effectively and efficiently. Specializes in building applications with the MERN stack. Possesses a track record of developing frontend web applications, secure backend databases and fully-functional websites both self-created and with team members. Regular participant of local hackathons and web developer meetups. Consistantly learning and improving design and coding skills, while looking for innovative ways to enhance production. Enjoys helping clients to achieve their desired look and database functionality for their online business.',
+  description: 'A detail-oriented Full Stack Web Developer with a knack for delivering user-friendly solutions effectively and efficiently. Specializes in building applications with the MERN stack and Ruby on Rails. Possesses a track record of developing frontend web applications, secure backend databases and fully-functional websites both self-created and with team members. Regular participant of local hackathons and web developer meetups. Consistantly learning and improving design and coding skills, while looking for innovative ways to enhance production. Enjoys helping clients to achieve their desired look and database functionality for their online business.',
   buttonLabel: 'See Projects',
   buttonLocation: 'portfolio',
   imgStart: false,

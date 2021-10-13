@@ -30,7 +30,7 @@ const HeroSection = () => {
         <HeroP>
           Welcome and thank you for visiting my portfolio website. 
           I have training as a full stack web developer, and enjoy 
-          working with JavaScript frameworks.
+          working with Ruby on Rails and JavaScript frameworks.
         </HeroP>
         <HeroBtnWrapper>
           <ButtonTwo 
