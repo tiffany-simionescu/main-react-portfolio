@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import Icon1 from '../../images/svg-3.svg'
-import Icon2 from '../../images/svg-4.svg'
 import Icon3 from '../../images/svg-5.svg'
 import Icon4 from '../../images/svg-6.svg'
-import Joker from '../../images/joker.jpg';
 import Blog from '../../images/blog.jpg';
 import Stock from '../../images/stocks.jpeg';
 import CloseIcon from '../../images/close.png';
@@ -29,16 +27,11 @@ ButtonTwo
 
 const Portfolio = (id) => {
   const [ecommerceIsOpen, setEcommerceIsOpen] = useState(false);
-  const [netflixIsOpen, setNetflixIsOpen] = useState(false);
   const [alphaBlogIsOpen, setAlphaBlogIsOpen] = useState(false);
   const [financeTrackerIsOpen, setFinanceTrackerIsOpen] = useState(false);
 
   const toggleEcommerce = () => {
     setEcommerceIsOpen(!ecommerceIsOpen);
-  };
-
-  const toggleNetflix = () => {
-    setNetflixIsOpen(!netflixIsOpen);
   };
 
   const toggleAlphaBlog = () => {
@@ -90,44 +83,6 @@ const Portfolio = (id) => {
             <ButtonTwo 
               target="_blank"
               href="https://ecommerce.tiffanysimionescu.com/"
-            >
-              View Website
-            </ButtonTwo>
-          </StyleModalLinkContainer>
-        </StyleModal>
-
-        <PortfolioCard id="netlix-clone" onClick={toggleNetflix}>
-          <PortfolioIcon src={Icon2} />
-          <PortfolioH2>Netflix Clone</PortfolioH2>
-          {/* <PortfolioP>
-            This app is currently in development. Stay tuned!
-          </PortfolioP> */}
-        </PortfolioCard>
-        <StyleModal
-          isOpen={netflixIsOpen}
-          onBackgroundClick={toggleNetflix}
-          onEscapeKeydown={toggleNetflix}
-        >
-          <Close src={CloseIcon} alt="close" onClick={toggleNetflix} />
-          {/* <Img src={Icon2} alt="netflix-clone" /> */}
-          <Img src={Joker} alt="netflix-clone" />
-          <StyleModalTitle>Netflix Clone</StyleModalTitle>
-          <StyleModalP>
-            This Netflix Clone application was built using React, 
-            Styled-Components, Fuse.js for searching through movies and series, 
-            custom hooks, Firebase for authentication and security, and Cloud Firestore for 
-            the database. 
-          </StyleModalP> 
-          <StyleModalLinkContainer>
-            <ButtonTwo 
-              target="_blank"
-              href="https://github.com/tiffany-simionescu/netflix-clone"
-            >
-              View Code
-            </ButtonTwo>
-            <ButtonTwo 
-              target="_blank"
-              href="https://netflixclone.tiffanysimionescu.com"
             >
               View Website
             </ButtonTwo>
