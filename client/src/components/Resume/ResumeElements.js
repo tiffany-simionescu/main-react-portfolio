@@ -92,7 +92,7 @@ export const ImgWrap = styled.div`
 `;
 
 export const Img = styled.img`
-  width: 100%;
+  width: 80%;
   margin: 0 0 10px 0;
   padding-right: 0;
 `;
@@ -137,5 +137,29 @@ export const ButtonTwo = styled(Link)`
     background-position: 100%;
     color: #fff;
     transition: 400ms ease-in-out;
+  }
+`;
+
+export const ButtonThree = styled.a`
+  border-radius: 50px;
+  background: ${({primary}) => (primary ? '#33BBBF' : '#060F13')};
+  white-space: nowrap;
+  padding: ${({big}) => (big ? '14px 48px' : '12px 30px')};
+  color: ${({dark}) => (dark ? '#060F13' : '#fff')};
+  font-size: ${({fontBig}) => (fontBig ? '20px' : '16px')};
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  margin-left: 20px;
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background: ${({primary}) => (primary ? '#fff' : '#33BBBF')};
+    color: #060F13;
   }
 `;

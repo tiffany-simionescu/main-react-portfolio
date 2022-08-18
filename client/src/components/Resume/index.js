@@ -14,6 +14,7 @@ import {
   Img,
   Button,
   ButtonTwo,
+  ButtonThree
 } from './ResumeElements';
 import Pdf from './tiffany_simionescu_resume.pdf';
 
@@ -26,8 +27,8 @@ const Resume = () => {
             <Column1>
               <TextWrapper>
                 <TopLine>Resume</TopLine>
-                <Heading lightText={false}>Lambda School Graduate</Heading>
-                <Subtitle darkText={true}>Lambda School is a 9+ month computer 
+                <Heading lightText={false}>Full Stack Web development Graduate</Heading>
+                <Subtitle darkText={true}>Bloom Institute of Technology - <em>formally Lambda School</em> - is a 9+ month computer 
                   science & software engineering program that provides an 
                   immersive hands-on curriculum with a focus on computer science, 
                   and full-stack web development. For more information about my 
@@ -37,15 +38,20 @@ const Resume = () => {
                   <ButtonTwo to={Pdf} target="_blank">
                     View Resume
                   </ButtonTwo>
+                  <ButtonThree href={"https://www.credly.com/badges/32b5b6dd-969b-4416-b19c-31daf3acf1e0/public_url"} target="_blank">
+                    View Badge Credentials
+                  </ButtonThree>
                 </BtnWrap>
               </TextWrapper>
             </Column1>
             <Column2>
               <ImgWrap>
-                <Img 
-                  src={require('../../images/svg-1.svg').default} 
-                  alt={"resume-image"} 
-                />
+                <a href='https://www.credly.com/badges/32b5b6dd-969b-4416-b19c-31daf3acf1e0/public_url'>
+                  <Img 
+                    src={require('../../images/badge.png').default} 
+                    alt={"resume-image"} 
+                  />
+                </a>
               </ImgWrap>
             </Column2>
           </ResumeRow>
