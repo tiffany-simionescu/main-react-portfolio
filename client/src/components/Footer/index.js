@@ -30,7 +30,7 @@ const Footer = () => {
       <FooterWrap>
         <SocialIcons>
           <SocialIconLink 
-            href="https://www.linkedin.com/in/tiffanysimionescu/" 
+            href="https://www.linkedin.com/in/tiffany-simionescu/" 
             target="_blank" 
             aria-label="LinkedIn"
           ><FaLinkedin />
@@ -47,12 +47,12 @@ const Footer = () => {
             aria-label="Facebook"
           ><FaFacebook />
           </SocialIconLink>
-          <SocialIconLink 
+          {/* <SocialIconLink 
             href="https://twitter.com/tsimionescu87" 
             target="_blank" 
             aria-label="Twitter"
           ><FaTwitter />
-          </SocialIconLink>
+          </SocialIconLink> */}
         </SocialIcons>
         <FooterLinksContainer>
           <FooterLinksWrapper>
@@ -87,7 +87,7 @@ const Footer = () => {
               <FooterLinkTitle>Social Media</FooterLinkTitle>
                 <FooterLinkA 
                   target='_blank'
-                  href='https://www.linkedin.com/in/tiffanysimionescu/'
+                  href='https://www.linkedin.com/in/tiffany-simionescu/'
                   >LinkedIn
                 </FooterLinkA>
                 <FooterLinkA 
@@ -98,10 +98,10 @@ const Footer = () => {
                   target='_blank'
                   href='https://www.facebook.com/Tiffany-Simionescu-Full-Stack-Web-Developer-337217927229001'
                   >Facebook</FooterLinkA>
-                <FooterLinkA 
+                {/* <FooterLinkA 
                   target='_blank'
                   href='https://twitter.com/tsimionescu87'
-                  >Twitter</FooterLinkA>
+                  >Twitter</FooterLinkA> */}
             </FooterLinkItems>
           </FooterLinksWrapper>
         </FooterLinksContainer>

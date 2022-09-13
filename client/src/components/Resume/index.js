@@ -13,7 +13,7 @@ import {
   BtnWrap,
   ImgWrap,
   Img,
-  Button,
+  // Button,
   ButtonTwo,
   ButtonThree
 } from './ResumeElements';
