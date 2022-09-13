@@ -2,6 +2,7 @@ import React from 'react'
 import {
   ResumeContainer,
   ResumeWrapper,
+  ResumeWrapperTwo,
   ResumeRow,
   Column1,
   Column2,
@@ -17,6 +18,7 @@ import {
   ButtonThree
 } from './ResumeElements';
 import Pdf from './tiffany_simionescu_resume.pdf';
+import LondonAppBrewery from '../../images/london_app_brewery.jpg';
 
 const Resume = () => {
   return (
@@ -27,6 +29,38 @@ const Resume = () => {
             <Column1>
               <TextWrapper>
                 <TopLine>Resume</TopLine>
+                <Heading lightText={false}>Complete Web Development Bootcamp Graduate</Heading>
+                <Subtitle darkText={true}>The London App Brewery Bootcamp is a comprehensive web development
+                  course that is taught by the lead instructor, Dr. Angela Yu. The curriculum provides
+                  over 65 hours of content that includes HTML, CSS, Bootstrap, Javascript, JQuery, GitHub, 
+                  Node.js, Express.js, APIs, MongoDB, React.js, and much more. 
+                </Subtitle>
+                <BtnWrap>
+                  <ButtonTwo to={Pdf} target="_blank">
+                    View Resume
+                  </ButtonTwo>
+                  {/* <ButtonThree href={"https://www.credly.com/badges/32b5b6dd-969b-4416-b19c-31daf3acf1e0/public_url"} target="_blank">
+                    View Badge Credentials
+                  </ButtonThree> */}
+                </BtnWrap>
+              </TextWrapper>
+            </Column1>
+            <Column2>
+              <ImgWrap>
+                <Img 
+                  src={LondonAppBrewery}
+                  alt="London App Brewery Image"
+                />
+              </ImgWrap>
+            </Column2>
+          </ResumeRow>
+        </ResumeWrapper>
+
+        <ResumeWrapperTwo>
+          <ResumeRow imgStart={false}>
+            <Column1>
+              <TextWrapper>
+                {/* <TopLine>Resume</TopLine> */}
                 <Heading lightText={false}>Full Stack Web development Graduate</Heading>
                 <Subtitle darkText={true}>Bloom Institute of Technology - <em>formally Lambda School</em> - is a 9+ month computer 
                   science & software engineering program that provides an 
@@ -55,7 +89,7 @@ const Resume = () => {
               </ImgWrap>
             </Column2>
           </ResumeRow>
-        </ResumeWrapper>
+        </ResumeWrapperTwo>
       </ResumeContainer>
     </>
   )

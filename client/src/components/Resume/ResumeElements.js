@@ -13,7 +13,19 @@ export const ResumeContainer = styled.div`
 export const ResumeWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 760px;
+  height: 660px;
+  width: 100%;
+  max-width: 1100px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 24px;
+  justify-content: center;
+`;
+
+export const ResumeWrapperTwo = styled.div`
+  display: grid;
+  z-index: 1;
+  height: 560px;
   width: 100%;
   max-width: 1100px;
   margin-right: auto;
