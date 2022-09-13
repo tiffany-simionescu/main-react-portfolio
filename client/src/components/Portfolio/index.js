@@ -256,21 +256,23 @@ const Portfolio = (id) => {
           <Img src={VirtualResumeImg} alt="visual-resume-site" />
           <StyleModalTitle>Visual Resume</StyleModalTitle>
           <StyleModalP>
-            Coming Soon...
+            This HTML and CSS project is a basic concept design for a virtual 
+            resume. Sections include bio, GitHub link, Skills, Education, Experience, 
+            and Contact Information.
           </StyleModalP>
           <StyleModalLinkContainer>
-            {/* <ButtonTwo 
+            <ButtonTwo 
               target="_blank"
-              href="https://github.com/tiffany-simionescu/drum-kit"
+              href="https://github.com/tiffany-simionescu/css_personal_site"
             >
               View Code
             </ButtonTwo>
             <ButtonTwo 
               target="_blank"
-              href="https://tiffany-simionescu.github.io/drum-kit/"
+              href="https://tiffany-simionescu.github.io/css_personal_site/"
             >
               View Website
-            </ButtonTwo> */}
+            </ButtonTwo>
           </StyleModalLinkContainer>
         </StyleModal>
 
