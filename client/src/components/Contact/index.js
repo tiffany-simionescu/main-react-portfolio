@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
-import emailjs from 'emailjs-com';
 import Video from '../../videos/video2.mp4';
-import { useHistory } from 'react-router-dom';
+import UseEmail from '../../UseEmail';
 import { 
   Container, 
   Form, 
@@ -20,34 +19,38 @@ import {
 
 const Contact = () => {
   const [name, setName] = useState('');
-  const history = useHistory();
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+  const {
+    loading,
+    submitted,
+    error,
+    sendEmail
+  } = UseEmail("https://public.herotofu.com/v1/4164f2b0-351a-11ed-9de0-b73c4b901972");
 
-    emailjs.sendForm(
-      'gmail', 
-      process.env.REACT_APP_TEMPLATE_ID, 
-      e.target, 
-      process.env.REACT_APP_USER_ID
-    )
-    .then(res => {
-      console.log("Email was sent.")
-      history.push('/');
-    });
-  };
 
   const handleNameChange = (e) => {
-    setName(e.target.value.replace(/[^a-zA-Z]/ig, ''))
+    setName(e.target.value.replace(/[^a-zA-Z]/ig, ''));
   }
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  }
+
+  const handleMessageChange = (e) => {
+    setMessage(e.target.value);
+  }
+
+  
 
   return (
     <>
-      <Container onSubmit={sendEmail}>
+      <Container>
         <FormWrap>
           <Icon to="/">Tiffany Simionescu's Portfolio</Icon>
           <FormContent>
-            <Form>
+            <Form action="https://public.herotofu.com/v1/4164f2b0-351a-11ed-9de0-b73c4b901972" method="post">
               <FormH1>Contact</FormH1>
 
               <FormLabel htmlFor="name">Name</FormLabel>
@@ -55,12 +58,18 @@ const Contact = () => {
                 onChange={handleNameChange} minLength="2" required />
 
               <FormLabel htmlFor="email">Email</FormLabel>
-              <FormInput type="email" name="email" required />
+              <FormInput type="email" name="email" value={email} 
+                onChange={handleEmailChange} required />
 
               <FormLabel htmlFor="message">Message</FormLabel>
-              <FormInputMessage type="textarea" rows="5" name="message" required />
+              <FormInputMessage type="textarea" name="message" value={message} 
+                onChange={handleMessageChange} rows="5" required />
+
+                { submitted && 'Done, email was sent!'}
+                { error ? `Unexpected error: ${error}` : null}
+                { loading && 'Email is being sent now...' }
               
-              <FormButton type="submit">Send</FormButton>
+              <FormButton type="submit" value="Download CTA">Send</FormButton>
               <Text to="/">Cancel</Text>
             </Form>
           </FormContent>
@@ -73,4 +82,4 @@ const Contact = () => {
   )
 }
 
-export default Contact
+export default Contact;
