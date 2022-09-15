@@ -13,25 +13,33 @@ export const ResumeContainer = styled.div`
 export const ResumeWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 660px;
+  height: 1000px;
   width: 100%;
   max-width: 1100px;
   margin-right: auto;
   margin-left: auto;
   padding: 0 24px;
   justify-content: center;
+
+  @media screen and (max-width: 766px) {
+    height: 600px;
+  }
 `;
 
 export const ResumeWrapperTwo = styled.div`
   display: grid;
   z-index: 1;
-  height: 560px;
   width: 100%;
   max-width: 1100px;
   margin-right: auto;
   margin-left: auto;
   padding: 0 24px;
   justify-content: center;
+
+  @media screen and (max-width: 766px) {
+    height: 500px;
+    margin: auto 18px;
+  }
 `;
 
 export const ResumeRow = styled.div`
@@ -40,8 +48,8 @@ export const ResumeRow = styled.div`
   align-items: center;
   grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1'` : `'col1 col2'`)};
 
-  @media screen and (max-width: 768px) {
-    grid-template-areas: ${({imgStart}) => (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`)};
+  @media screen and (max-width: 766px) {
+    display: block;
   }
   `;
 
@@ -49,6 +57,9 @@ export const Column1 = styled.div`
   margin-bottom: 15px;
   padding: 0 15px;
   grid-area: col1;
+
+  @media screen and (max-width: 766px) {
+  }
 `;
 
 export const Column2 = styled.div`
@@ -80,7 +91,7 @@ export const Heading = styled.h1`
   font-weight: 600;
   color: ${({lightText}) => (lightText ? '#f7f8fa' : '#060F13')};
 
-  @media screen and (max0width: 480px) {
+  @media screen and (max-width: 480px) {
     font-size: 32px;
   }
 `;
@@ -93,6 +104,18 @@ export const Subtitle = styled.p`
   color: ${({darkText}) => (darkText ? '#060F13' : '#fff')};
 `;
 
+export const SubtitleTwo = styled.p`
+  max-width: 440px;
+  margin-bottom: 35px;
+  font-size: 18px;
+  line-height: 24px;
+  color: ${({darkText}) => (darkText ? '#060F13' : '#fff')};
+
+  @media screen and (max-width: 768px) {
+    margin-right: 20px;
+  }
+`;
+
 export const BtnWrap = styled.div`
   display: flex;
   justify-content: flex-start;
@@ -101,6 +124,10 @@ export const BtnWrap = styled.div`
 export const ImgWrap = styled.div`
   max-width: 555px;
   height: 100%;
+
+  @media screen and (max-width: 768px) {
+    transform: scale(0);
+  }
 `;
 
 export const Img = styled.img`
